@@ -1,0 +1,13 @@
+Credit Risk Analysis Report
+
+The LR model generated an accuracy score of 99%, which is pretty good.
+
+Precision = TP/(TP+FP), means out of all the cases this model classified as healthy loan, 100% of them are truly health, and 84% of model-classified high-risk loans are correct.
+
+Recall = TP/(TP+FN), means among all healthy loans, this model can identify 99% of them, and for all high-risk loans, this model can identify 94%.
+
+F1-score, defined as Harmonic mean of Precision and Recall. For healthy loans, it is pretty good. For high-risk loans, it is somewhat imbalanced.
+
+This makes sense to me as lenders would prefer a model with higher recall on high-risk cases. After all, providing funds to high-risk customers being identified as healthy loan would lead to loss of money, while not providing funds to healthy-loan customers being identified as high-risk might result in customer loss, but this is not as too big a deal. In credit risk management, cost of misclassification for high-risk as healthy cases can be significantly higher than other error types. Lower precision in high-risk cases will not harm business drastically.
+
+In conclusion, I will recommend this model to lending companies.
